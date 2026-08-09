@@ -1,0 +1,105 @@
+:root {
+  --bg: #f8f7f4;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #2d5a4a;
+  --shadow: 0 4px 20px rgba(0,0,0,0.06);
+  --border: rgba(0,0,0,0.06);
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --text: #f0f0f0;
+  --muted: #a0a0a0;
+  --accent: #7ec8a3;
+  --shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --border: rgba(255,255,255,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+#theme-toggle {
+  background: var(--card);
+  border: 1px solid var(--border);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+#theme-toggle:active {
+  transform: scale(0.9);
+}
+
+.categories {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card .icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}

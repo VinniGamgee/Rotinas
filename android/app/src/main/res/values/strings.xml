@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">rotinas</string>
+    <string name="title_activity_main">rotinas</string>
+    <string name="package_name">com.rotinas.manual</string>
+    <string name="custom_url_scheme">com.rotinas.manual</string>
+</resources>
