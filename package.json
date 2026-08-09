@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^8.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinniGamgee/Rotinas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VinniGamgee/Rotinas/issues"
+  },
+  "homepage": "https://github.com/VinniGamgee/Rotinas#readme"
 }
